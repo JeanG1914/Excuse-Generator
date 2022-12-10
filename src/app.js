@@ -17,22 +17,22 @@ let when = [
   "while I was praying"
 ];
 
-function randomGuess(array) {
-  let guess;
-  guess = array[Math.floor(Math.random() * array.length)];
-  return guess;
+function randomExcuses(array) {
+  let excuses;
+  excuses = array[Math.floor(Math.random() * array.length)];
+  return excuses;
 }
 
 function excuseGenerator(who, action, what, when) {
   let excuse = "";
   excuse =
-    randomGuess(who) +
+    randomExcuses(who) +
     " " +
-    randomGuess(action) +
+    randomExcuses(action) +
     " " +
-    randomGuess(what) +
+    randomExcuses(what) +
     " " +
-    randomGuess(when) +
+    randomExcuses(when) +
     " ";
   return excuse;
 }
